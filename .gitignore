@@ -1,4 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
 venv/
 .venv/
-__pycache__/
+env/
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Django
+*.log
+db.sqlite3
+
+# Environment variables
+.env
+.env.*
+
+# Node
+node_modules/
+frontend/dist/
+
+# Vite
+frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Temporary notebooks
+Untitled.ipynb
+Untitled1.ipynb
+
+# Dataset
+enron_spam_data/

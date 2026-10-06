@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef6ff, #f8fbff);
+  padding: 50px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+  color: #172033;
+}
+
+.header p {
+  margin-top: 12px;
+  color: #667085;
+  font-size: 17px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.card label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #344054;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 190px;
+  padding: 16px;
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #4f8cff;
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.12);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 13px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.predict-btn {
+  flex: 1;
+  background: #2563eb;
+  color: white;
+}
+
+.predict-btn:hover {
+  background: #1d4ed8;
+}
+
+.predict-btn:disabled,
+.clear-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.clear-btn {
+  background: #eef2f7;
+  color: #344054;
+}
+
+.result {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.result.ham {
+  background: #ecfdf3;
+  border: 1px solid #abefc6;
+}
+
+.result.spam {
+  background: #fff1f3;
+  border: 1px solid #fecdca;
+}
+
+.result-icon {
+  font-size: 30px;
+}
+
+.result-label {
+  margin: 0;
+  color: #667085;
+  font-size: 13px;
+}
+
+.result h2 {
+  margin: 3px 0;
+  font-size: 28px;
+}
+
+.result.ham h2 {
+  color: #067647;
+}
+
+.result.spam h2 {
+  color: #b42318;
+}
+
+.probability {
+  margin: 5px 0 0;
+  color: #475467;
+}
+
+.error {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #fef3f2;
+  color: #b42318;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #98a2b3;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 30px 15px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
